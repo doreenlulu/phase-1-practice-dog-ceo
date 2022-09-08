@@ -1,5 +1,6 @@
-console.log('%c HI', 'color: firebrick')
+const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 
+console.log('%c HI', 'color: firebrick')
  .then (function (resp){
   return resp.json();
  })
@@ -26,7 +27,7 @@ function fetchDogs() {
 function displayImage(dogImagePath) {
     const main = document.querySelector('#dog-image-container');
     const img = document.createElement('img');
-    img.setAttribute('src',dogImagePath);
+    img.setAttribute('images',dogImagePath);
     main.appendChild(img);
 }
 
